@@ -1,0 +1,112 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: rgb(229, 236, 232);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background-image: url('comida.jpg');
+    padding: 6.5%; 
+}
+
+header a { text-decoration: none; }
+
+#header-div {
+    background-color: rgba(245, 94, 94, 0.7);
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 2%;
+    border-radius: 2px;
+}
+
+h1, h2 {
+    color: white; 
+    padding: 1% 0 ;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px; 
+    text-transform: uppercase;
+}
+
+h2 { font-size: 16px;  }
+
+nav {
+    background-color:  rgba(245, 94, 94);
+    padding: 15px;
+}
+
+#title_section {
+    color: rgba(245, 94, 94);
+    text-align: center;
+}
+
+.promociones {
+    display: grid;
+    grid-gap: 2.5%;  
+    grid-template-columns: repeat(3, 1fr); 
+    margin: auto 4%;
+    padding: 1%;
+    padding-bottom: 3%;
+    background-color: white;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.promocion { 
+    text-align: center;
+    background-color: rgb(250, 231, 171);
+    padding-top: 2%;
+    margin-top: 2%;
+    border-radius: 5px;
+}
+
+.promocion img {
+    width: 30%;
+    height: 40%;
+}
+
+footer p {
+    background-color: rgba(245, 94, 94);
+    color: white;
+    padding: 2%;
+    text-align: center; 
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+    .promociones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        background-color: white;
+        border-radius: 5px;
+    }
+    
+    .promocion { 
+        text-align: center;
+        background-color: rgb(250, 231, 171);
+    }
+    
+    .promocion img {
+        width: 40%;
+        height: 40%;
+    }
+
+    footer p {
+        background-color: rgba(245, 94, 94);
+        color: white;
+        padding: 4%;
+        text-align: center; 
+        margin-top: 10%;
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+}
+
